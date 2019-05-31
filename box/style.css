@@ -1,0 +1,72 @@
+td {
+    padding: 100px;
+    padding-top: 20px;
+}
+
+#p1 {
+    border-style: double;
+    border-top-style: dotted;
+    border-width: 10px;
+    border-right-width: 0px;
+    border-color: red;
+    border-top-color: blue;
+}
+
+#p2 {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color:green;
+    text-align:center;
+    border: 2px solid blue;
+}
+
+#div1 {
+    background-color:blue;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    box-shadow: 10px 10px 5px red;
+}
+
+.mg {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    margin:100px;
+}
+
+
+.container {
+    margin:100px;
+}
+
+.bd {
+    border-style: groove;
+}
+
+.pd {
+    padding: 10px;
+}
+
+.content {
+    background-color:blue;
+}
+
+.container1 {
+    margin:100px;
+}
+
+.bd1 {
+    border-style: groove;
+}
+
+.pd1 {
+    padding: 10px;
+}
+
+.content1 {
+    background-color:red;
+}
+
+
