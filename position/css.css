@@ -1,0 +1,66 @@
+#position1 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+
+#position2 {
+    height: 100px;
+    width: 100px;
+    background-color: red;   
+}
+
+#position3 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+#position4 {
+    height: 100px;
+    width: 100px;
+    background-color: red;  
+}
+
+#position5 {
+    height: 100px;
+    width: 100px;
+    background-color: red;  
+    position: relative;   /* 如果不写的话默认是static，6会相对于body进行定位*/
+}
+/* 绝对定位是相对于第一个relative的父元素的定位 */
+#position6 {
+    height: 10px;
+    width: 10px;
+    background-color:purple;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+#position8 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#position9 {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    position: static;
+    top: 20px;
+    left: 20px;
+}
+
