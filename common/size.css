@@ -1,0 +1,14 @@
+.p1 {
+    width:400px;
+    line-height: normal;
+}
+
+.p2 {
+    width:400px;
+    line-height: 200%;
+}
+
+.p3 {
+    width:400px;
+    line-height: 50%;
+}
