@@ -1,0 +1,40 @@
+#ul1 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#ul1 a:link,#ul1 a:visited {
+    text-decoration: none;
+    display: block;  /* 水平的仅仅是去掉了此行 ， 并加了li元素的display inline*/
+    background-color:burlywood;
+    color : aliceblue;
+    width:50px;
+    text-align: center;
+}
+
+#ul1 a:active,#ul1 a:hover {
+    background-color: red;
+}
+
+#ul2 {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#ul2 li {
+    display: inline;
+}
+
+#ul2 a:link, #ul2 a:visited {
+    text-decoration: none;
+    background-color:burlywood;
+    color : aliceblue;
+    width:50px;
+    text-align: center;
+}
+
+#ul2 a:active,#ul2 a:hover {
+    background-color: red;
+}
