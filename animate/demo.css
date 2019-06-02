@@ -1,0 +1,32 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+#div2 {
+    transform:translate(100px,100px);
+    -webkit-transform: translate(100px,100px); /* safari chromb*/
+    -ms-transform: translate(100px,100px); /* ie*/
+    -o-transform: translate(100px,100px); /* opera */
+    -moz-transform: translate(100px,100px); /* firefox*/
+}
+
+#div3 {
+    transform: rotate(200deg);
+    /* 同 div2 可以兼容各个浏览器*/
+}
+
+#div4 {
+    transform: scale(1,2);
+    /* 同 div2 可以兼容各个浏览器*/
+}
+
+#div5 {
+    transform: skew(20deg,20deg);
+    /* 同 div2 可以兼容各个浏览器*/
+}
+
+#div6 {
+    transform:rotateX(120deg);
+}
