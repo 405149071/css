@@ -1,0 +1,15 @@
+div {
+    width: 100px;      
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation: anim 5s infinite alternate;  /* 执行完成后，反方向的再执行 */
+}
+
+@keyframes anim {
+    0% {background:blue;left:0px;top:0px}
+    25% {background:hsl(0, 100%, 50%);left:200px;top:0px}
+    50% {background:#ccffcc;left:200px;top:200px}
+    75% {background:#00ffcc;left:0px;top:200px}
+    100% {background:blue;left:0px;top:0px}
+}
