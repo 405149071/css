@@ -6,35 +6,53 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>浮动的问题</title>
     <style>
-        .d1 {
+        .d1,.dd1 {
             width: 500px;
             height:auto;
             border: 2px solid #ccc;
         }
-        .d2,.d3 {
+        .d2,.d3 ,.dd2,.dd3{
             width : 200px;
             height: 200px;
-            background-color: red;
-            float:left;
+            background-color: red;      
         }
-        .d3 {
-            background-color:green;
+        .d3,.dd3 {
+            background-color: green;
+        }
+        .d2 , .d3 {
             float: left;
         }
+
         .clear::after{
             content:'';
             display: block;
             clear:both;
         }
+
+        .dd1 {
+            display: flex;
+        }
+        .dd2,.dd3{
+            flex-shrink: 0;  /*默认是1，自动收缩，如果是1，不收缩，会超出容器宽度 */
+        }
     </style>
 </head>
 <body>
     <!-- 要实现div1的框线包围住 d2,d3,需要定义clear,并应用于d1，代码过多。
-    flex布局更好一些。
+    flex布局更好一些。适用手机布局,flex布局只需要在父元素上加上display:flex即可，不用在子元素float
+    弹性布局，一行显示不下时，会自动改变宽度。
     -->
     <div class="d1 clear">
         <div class="d2"></div>
         <div class="d3"></div>
     </div>
+<br/>
+    <div class="dd1">
+            <div class="dd2"></div>
+            <div class="dd3"></div>
+            <div class="dd2"></div>
+            <div class="dd3"></div>
+            <div class="dd2"></div>
+        </div>
 </body>
 </html>
