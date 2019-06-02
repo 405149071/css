@@ -1,0 +1,10 @@
+.container {
+    /* column-width:2500px; */
+    column-count: 4;
+    column-gap:5px;
+}
+
+.container div {
+    width: 250px;
+    margin: 5px 0;
+}
