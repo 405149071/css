@@ -1,0 +1,13 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: width 2s,height 2s,transform 2s; /* 执行时间*/
+    transition-delay: 1s; /* 延迟1秒执行*/
+}
+
+div:hover{
+    width :200px;
+    height :200px;
+    transform:rotate(360deg);
+}
