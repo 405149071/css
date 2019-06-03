@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>flex浮动与布局</title>
+    <style>
+    .f1{
+        width: 800px;
+        height: 200px;
+        background-color: #cccccc;
+        display: flex;  
+        flex-direction: row;  /* flex 主轴布局方向  水平从左向右/水平从右向左/垂直从上向下/垂直从下向上*/
+        
+        /* flex 默认子元素是不换行的，当超出时会压缩
+            默认从左向右换行
+        */
+        flex-wrap: wrap;
+        /* 项目在主轴上对齐方式  起点对齐 中对齐 终点对齐 */
+        /* justify-content: flex-start; */
+        /* justify-content: center;  */
+        /* justry-content:space-between  对齐两端，子元素之间的间隔都相等*/
+        /* justry-conteng:space-around    每个项目都两侧都相等*/
+        justify-content: flex-end;
+
+        /* 交叉轴 */
+        /* 交叉轴居中 */
+        align-items:center; 
+
+        /* 在交叉轴上，占满容器的高度，子元素高度为aotu
+        align-items:stretch;
+        */
+
+        /* 子元素在交叉轴上，基于第一行文字的基线对齐
+        align-items:baseline;
+        */
+
+        /* 给某个子元素一个特殊样式，然后给这个样式order:-1 排序，越小越靠前，默认为0 */
+
+        /* 子元素过多时，默认是缩小子元素，如果想不让他们缩小。
+        flex-shrink : 0;
+        */
+    }
+    .item{
+        width: 200px;
+        height: 200px;
+        border:1px solid #333333;
+        box-sizing: border-box;
+        font-size: 40px;
+        text-align: center;
+        line-height: 200px;
+    }
+    </style>
+</head>
+<body>
+    
+    <div class="f1">
+        <div class="item">1</div>
+        <div class="item">2</div>
+    </div>
+</body>
+</html>
