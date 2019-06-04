@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>第十七课.Flex布局-align-grow</title>
+    <style>
+        .demo {
+            border: 2px solid orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .item {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            padding: 20px;
+        }
+
+        .growth {
+            flex-grow:1;
+        }
+
+        .growth2 {
+            flex-grow:2;
+        }
+
+        .growth3 {
+            flex-grow:3;
+        }
+
+        .demo2 {
+            border: 2px solid orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            /* 当宽度够 */
+            width : 500px;   
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+
+    <div class="demo">
+        <div class="item growth">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo">
+        <div class="item growth">A</div>
+        <div class="item growth">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo">
+        <div class="item growth">A</div>
+        <div class="item growth">B</div>
+        <div class="item growth">C</div>
+    </div>
+
+    <div class="demo">
+            <div class="item growth">A</div>
+            <div class="item growth2">B</div>
+            <div class="item growth3">C</div>
+    </div>
+
+    <div class="demo2">
+            <div class="item growth">A</div>
+            <div class="item growth2">B</div>
+            <div class="item growth3">C</div>
+    </div>
+
+
+</body>
+
+</html>

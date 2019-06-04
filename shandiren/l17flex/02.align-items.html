@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>第十七课.Flex布局-align-items</title>
+    <style>
+        .demo {
+            border: 2px solid orange;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .demo_center {
+            align-items: center;
+        }
+
+        .demo_start {
+            align-items: flex-start;
+        }
+
+        .demo_end {
+            align-items: flex-end;
+        }
+
+        .demo_stretch {
+            align-items: stretch;
+        }
+
+        .demo_baseline {
+            align-items: baseline;
+        }
+
+        .item {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_stretch">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_baseline">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+    
+        </div>
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>第十七课.Flex布局-justify-content</title>
+    <style>
+        .demo {
+            border: 2px solid orange;
+
+            display: flex;
+        }
+
+        .demo_center {
+            justify-content: center;
+        }
+
+        .demo_start {
+            justify-content: flex-start;
+        }
+
+        .demo_end {
+            justify-content: flex-end;
+        }
+
+        .demo_bewteen {
+            justify-content: space-between;
+        }
+
+        .demo_around {
+            justify-content: space-around;
+        }
+        .demo_event {
+            justify-content: space-evenly;
+        }
+        .item {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo demo_start">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+    <div class="demo demo_center">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+    <div class="demo demo_end">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+    <div class="demo demo_bewteen">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+    <div class="demo demo_around">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+    <div class="demo demo_event">
+            <div class="item">A</div>
+            <div class="item">B</div>
+            <div class="item">C</div>
+    
+        </div>
+</body>
+
+</html>

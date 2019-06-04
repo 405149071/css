@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>第十七课.Flex布局-flex-shrink</title>
+        <style>
+        .demo {
+            border: 2px solid orange;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+        }
+
+        .item {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            padding: 20px;
+            /* 指定长度，让空间不够 ,默认收缩，均分空间*/
+            width: 300px;  
+        }
+        .a {
+            /* 空间不够的情况，我只能损失0.2，其他的部分损失1 */
+            flex-shrink: 0.2;
+        }
+        .b {
+            flex-shrink: 2;
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="demo">
+            <div class="item a">A</div>
+            <div class="item b">B</div>
+            <div class="item c">C</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>第十七课.Flex布局-align-self</title>
+    <style>
+        .demo {
+            border: 2px solid orange;
+            height: 300px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .demo_center {
+            align-items: center;
+        }
+
+
+        .item {
+            background-color: blueviolet;
+            border: 1px solid black;
+            color: white;
+            padding: 20px;
+        }
+
+        .item_start {
+            align-self: flex-start;
+        }
+
+        .item_center {
+            align-self: center;
+        }
+
+        .item_end {
+            align-self: flex-end;
+        }
+
+        .item_stretch {
+            align-self: stretch;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+
+    </div>
+
+    <div class="demo demo_center">
+        <div class="item item_start">A</div>
+        <div class="item item_center">B</div>
+        <div class="item item_end">C</div>
+        <div class="item item_stretch">C</div>
+        
+    </div>
+
+</body>
+
+</html>
