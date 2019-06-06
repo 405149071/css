@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对定位</title>
+    <style>
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .demo2 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        .demo3 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+        }
+        .demo4 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+        }
+    </style>
+</head>
+<!-- 绝对定位是到第一个relative到父元素的定位 -->
+<body>
+    <div class="demo">右上方</div>
+    <div class="demo2">左上方</div>
+    <div class="demo3">左下方</div>
+    <div class="demo4">右下方</div>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>固定布局</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            text-align: center；
+        }
+
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: fixed;
+            top: 0px;
+            right: 0px;
+        }
+
+        .demo2 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+
+        .demo3 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .demo4 {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        /* 父元素不是static了，就绝对定位到谁那里 */
+
+        .main {
+            background-color: green;
+            /* position: relative; */
+            height: 1600px;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: blue;
+            position: relative;
+            height: 300px;
+            width: 300px;
+            margin: 0 auto;
+           
+        }
+    </style>
+</head>
+<!-- 绝对定位是到第一个relative到父元素的定位 -->
+
+<body>
+
+
+    <div class="main">
+        <div class="container">
+            <!-- 将以下四个元素扔到main里。可以实现中间居中，4个角定位到main到4角到样式 -->
+            <div class="demo">右上方</div>
+            <div class="demo2">左上方</div>
+            <div class="demo3">左下方</div>
+            <div class="demo4">右下方</div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>浮动布局</title>
+    <style>
+        .normal {
+            background-color: orange;
+            height: 100px;
+        }
+
+        .demo {
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            color: white;
+            /* 浮动之后，脱离文档流，后边的div元素会自动补位，补到较低到位置 ，*/
+            /* 整个过程中间到文字部分都不会覆盖 */
+            /* 多了会自动换行 */
+            /* 只要浮动起来，就默认块元素，比如span */
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <div class="demo">浮动元素</div>
+    <span class="demo">afafaf</span>
+    <div class="normal">普通样式</div>
+
+</body>
+
+</html>
